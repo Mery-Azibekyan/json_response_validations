@@ -9,11 +9,135 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Reassured</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">1,261</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Reassured</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">apiTests.test</td><td><a href="#m0">one</a></td><td rowspan="1">1614335138369</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m1">two</a></td><td rowspan="1">1614335138364</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Reassured</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">validationTests.validateJsonTests</td><td><a href="#m0">checkTypesById</a></td><td rowspan="1">1617958488459</td><td rowspan="1">15</td></tr><tr class="failedeven"><td><a href="#m1">getAllAuthorsLength</a></td><td rowspan="1">1617958488500</td><td rowspan="1">29</td></tr><tr class="failedeven"><td><a href="#m2">getElementsByNameAndProperty2</a></td><td rowspan="1">1617958488563</td><td rowspan="1">25</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">validationTests.validateJsonTests</td><td><a href="#m3">checkAllCategories</a></td><td rowspan="1">1617958487505</td><td rowspan="1">868</td></tr><tr class="passedeven"><td><a href="#m4">checkCategory</a></td><td rowspan="1">1617958488386</td><td rowspan="1">35</td></tr><tr class="passedeven"><td><a href="#m5">checkToppingsIds</a></td><td rowspan="1">1617958488425</td><td rowspan="1">31</td></tr><tr class="passedeven"><td><a href="#m6">collectDoubleValues</a></td><td rowspan="1">1617958488483</td><td rowspan="1">15</td></tr><tr class="passedeven"><td><a href="#m7">getBookNames</a></td><td rowspan="1">1617958488529</td><td rowspan="1">14</td></tr><tr class="passedeven"><td><a href="#m8">getElementsByNameAndProperty</a></td><td rowspan="1">1617958488546</td><td rowspan="1">13</td></tr><tr class="passedeven"><td><a href="#m9">getIdsByBatterType</a></td><td rowspan="1">1617958488595</td><td rowspan="1">27</td></tr><tr class="passedeven"><td><a href="#m10">getIdsByBatterType1</a></td><td rowspan="1">1617958488628</td><td rowspan="1">11</td></tr><tr class="passedeven"><td><a href="#m11">getMaxPrice</a></td><td rowspan="1">1617958488643</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m12">getPriceSum</a></td><td rowspan="1">1617958488653</td><td rowspan="1">11</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">apiTests.test#one</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">apiTests.test#two</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">validationTests.validateJsonTests#checkTypesById</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+Expected: every item is &quot;Regular&quot;
+     but: an item was &lt;[Regular]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at validationTests.validateJsonTests.checkTypesById(validateJsonTests.java:116)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">validationTests.validateJsonTests#getAllAuthorsLength</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: The parameter &quot;author&quot; was used but not defined. Define parameters using the JsonPath.params(...) function
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:257)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:50)
+	at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
+	at io.restassured.path.json.JsonPath.getInt(JsonPath.java:237)
+	at validationTests.validateJsonTests.getAllAuthorsLength(validateJsonTests.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: groovy.lang.MissingPropertyException: No such property: author for class: java.lang.String
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65)
+	at org.codehaus.groovy.runtime.callsite.GetEffectivePojoPropertySite.getProperty(GetEffectivePojoPropertySite.java:65)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGetProperty(AbstractCallSite.java:298)
+	at Script1$_run_closure1.doCall(Script1.groovy:1)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovy.lang.Closure.call(Closure.java:421)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3574)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3559)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3659)
+	at org.codehaus.groovy.runtime.dgm$87.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:244)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at Script1.run(Script1.groovy:1)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:443)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:481)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:452)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:179)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:70)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+	... 36 more
+... Removed 48 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">validationTests.validateJsonTests#getElementsByNameAndProperty2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Invalid JSON expression:
+Script1.groovy: 1: expecting EOF, found &apos;[&apos; @ line 1, column 37.
+                            $.elements[?(@.type == &apos;TEXT&apos; &amp;&amp; @.properties[0].producesVideo == false)].name
+                                       ^
+
+1 error
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:257)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:57)
+	at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at validationTests.validateJsonTests.getElementsByNameAndProperty2(validateJsonTests.java:161)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script1.groovy: 1: expecting EOF, found &apos;[&apos; @ line 1, column 37.
+   restAssuredJsonRootObject.$.elements[?(@.type == &apos;TEXT&apos; &amp;&amp; @.properties[0].producesVideo == false)].name
+                                       ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:311)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:151)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:121)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:133)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:325)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:224)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:190)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:226)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:196)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:954)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:636)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:612)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:589)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:401)
+	at groovy.lang.GroovyClassLoader.access$300(GroovyClassLoader.java:89)
+	at groovy.lang.GroovyClassLoader$5.provide(GroovyClassLoader.java:341)
+	at groovy.lang.GroovyClassLoader$5.provide(GroovyClassLoader.java:338)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:147)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:336)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:546)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:558)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:442)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:481)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:452)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:179)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:70)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+	... 36 more
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">validationTests.validateJsonTests#checkAllCategories</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">validationTests.validateJsonTests#checkCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">validationTests.validateJsonTests#checkToppingsIds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">validationTests.validateJsonTests#collectDoubleValues</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">validationTests.validateJsonTests#getBookNames</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">validationTests.validateJsonTests#getElementsByNameAndProperty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">validationTests.validateJsonTests#getIdsByBatterType</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">validationTests.validateJsonTests#getIdsByBatterType1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">validationTests.validateJsonTests#getMaxPrice</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">validationTests.validateJsonTests#getPriceSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

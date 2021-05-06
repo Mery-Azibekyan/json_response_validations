@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.69" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2.127" tests="13" errors="0" skipped="0" failures="3">
   <properties>
-    <property name="idea.version" value="2020.2.3"/>
+    <property name="idea.version" value="2020.2.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
     <property name="java.vm.version" value="25.261-b12"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_261\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.2.3 verify"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.2.4 install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,6 +63,50 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="two" classname="apiTests.test" time="0.003"/>
-  <testcase name="one" classname="apiTests.test" time="0"/>
+  <testcase name="checkAllCategories" classname="validationTests.validateJsonTests" time="0.866"/>
+  <testcase name="checkCategory" classname="validationTests.validateJsonTests" time="0.035"/>
+  <testcase name="checkToppingsIds" classname="validationTests.validateJsonTests" time="0.031"/>
+  <testcase name="checkTypesById" classname="validationTests.validateJsonTests" time="0.023">
+    <failure message="&#10;Expected: every item is &quot;Regular&quot;&#10;     but: an item was &lt;[Regular]&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: every item is "Regular"
+     but: an item was <[Regular]>
+	at validationTests.validateJsonTests.checkTypesById(validateJsonTests.java:116)
+]]></failure>
+  </testcase>
+  <testcase name="collectDoubleValues" classname="validationTests.validateJsonTests" time="0.016"/>
+  <testcase name="getAllAuthorsLength" classname="validationTests.validateJsonTests" time="0.029">
+    <failure message="The parameter &quot;author&quot; was used but not defined. Define parameters using the JsonPath.params(...) function" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: The parameter "author" was used but not defined. Define parameters using the JsonPath.params(...) function
+	at validationTests.validateJsonTests.getAllAuthorsLength(validateJsonTests.java:75)
+Caused by: groovy.lang.MissingPropertyException: No such property: author for class: java.lang.String
+	at validationTests.validateJsonTests.getAllAuthorsLength(validateJsonTests.java:75)
+</failure>
+  </testcase>
+  <testcase name="getBookNames" classname="validationTests.validateJsonTests" time="0.016"/>
+  <testcase name="getElementsByNameAndProperty" classname="validationTests.validateJsonTests" time="0.016"/>
+  <testcase name="getElementsByNameAndProperty2" classname="validationTests.validateJsonTests" time="0.023">
+    <failure message="Invalid JSON expression:&#10;Script1.groovy: 1: expecting EOF, found &apos;[&apos; @ line 1, column 37.&#10;                            $.elements[?(@.type == &apos;TEXT&apos; &amp;&amp; @.properties[0].producesVideo == false)].name&#10;                                       ^&#10;&#10;1 error&#10;" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: 
+Invalid JSON expression:
+Script1.groovy: 1: expecting EOF, found '[' @ line 1, column 37.
+                            $.elements[?(@.type == 'TEXT' && @.properties[0].producesVideo == false)].name
+                                       ^
+
+1 error
+
+	at validationTests.validateJsonTests.getElementsByNameAndProperty2(validateJsonTests.java:161)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
+startup failed:
+Script1.groovy: 1: expecting EOF, found '[' @ line 1, column 37.
+   restAssuredJsonRootObject.$.elements[?(@.type == 'TEXT' && @.properties[0].producesVideo == false)].name
+                                       ^
+
+1 error
+
+	at validationTests.validateJsonTests.getElementsByNameAndProperty2(validateJsonTests.java:161)
+]]></failure>
+  </testcase>
+  <testcase name="getIdsByBatterType" classname="validationTests.validateJsonTests" time="0.028"/>
+  <testcase name="getIdsByBatterType1" classname="validationTests.validateJsonTests" time="0.011"/>
+  <testcase name="getMaxPrice" classname="validationTests.validateJsonTests" time="0.002"/>
+  <testcase name="getPriceSum" classname="validationTests.validateJsonTests" time="0.012"/>
 </testsuite>

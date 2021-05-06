@@ -1,2 +1,2 @@
-apiTests\loginTest.class
+validationTests\validateJsonTests.class
 apiTests\test.class

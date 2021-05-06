@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Reassured">
-              <span class="suite-name border-passed">Reassured</span>
+              <span class="suite-name border-failed">Reassured</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Reassured">
-                    <span>0 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">13 methods, 3 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Reassured" class="hide-methods failed suite-Reassured"> (hide)</a> <!-- hide-methods failed suite-Reassured -->
+                      <a href="#" panel-name="suite-Reassured" class="show-methods failed suite-Reassured"> (show)</a> <!-- show-methods failed suite-Reassured -->
+                    </span>
+                    <div class="method-list-content failed suite-Reassured">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="checkTypesById">checkTypesById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="getAllAuthorsLength">getAllAuthorsLength</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="getElementsByNameAndProperty2">getElementsByNameAndProperty2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Reassured -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +126,52 @@
                     <div class="method-list-content passed suite-Reassured">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="apiTests.test" hash-for-method="one">one</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="checkAllCategories">checkAllCategories</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="apiTests.test" hash-for-method="two">two</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="checkCategory">checkCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="checkToppingsIds">checkToppingsIds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="collectDoubleValues">collectDoubleValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="getBookNames">getBookNames</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="getElementsByNameAndProperty">getElementsByNameAndProperty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="getIdsByBatterType">getIdsByBatterType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="getIdsByBatterType1">getIdsByBatterType1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="getMaxPrice">getMaxPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Reassured" title="validationTests.validateJsonTests" hash-for-method="getPriceSum">getPriceSum</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Reassured -->
@@ -122,24 +186,228 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Reassured" class="panel Reassured">
-          <div class="suite-Reassured-class-passed">
+          <div class="suite-Reassured-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apiTests.test</span>
+              <img src="failed.png"/>
+              <span class="class-name">validationTests.validateJsonTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="one">
-                  </a> <!-- one -->
-                  <span class="method-name">one</span>
+                  <a name="checkTypesById">
+                  </a> <!-- checkTypesById -->
+                  <span class="method-name">checkTypesById</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: every item is &quot;Regular&quot;
+     but: an item was &lt;[Regular]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at validationTests.validateJsonTests.checkTypesById(validateJsonTests.java:116)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="two">
-                  </a> <!-- two -->
-                  <span class="method-name">two</span>
+                  <a name="getAllAuthorsLength">
+                  </a> <!-- getAllAuthorsLength -->
+                  <span class="method-name">getAllAuthorsLength</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: The parameter &quot;author&quot; was used but not defined. Define parameters using the JsonPath.params(...) function
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:257)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:50)
+	at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
+	at io.restassured.path.json.JsonPath.getInt(JsonPath.java:237)
+	at validationTests.validateJsonTests.getAllAuthorsLength(validateJsonTests.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: groovy.lang.MissingPropertyException: No such property: author for class: java.lang.String
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65)
+	at org.codehaus.groovy.runtime.callsite.GetEffectivePojoPropertySite.getProperty(GetEffectivePojoPropertySite.java:65)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGetProperty(AbstractCallSite.java:298)
+	at Script1$_run_closure1.doCall(Script1.groovy:1)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.Closure.call(Closure.java:405)
+	at groovy.lang.Closure.call(Closure.java:421)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3574)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3559)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.collect(DefaultGroovyMethods.java:3659)
+	at org.codehaus.groovy.runtime.dgm$87.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:244)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at Script1.run(Script1.groovy:1)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:443)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:481)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:452)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:179)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:70)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+	... 36 more
+... Removed 48 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getElementsByNameAndProperty2">
+                  </a> <!-- getElementsByNameAndProperty2 -->
+                  <span class="method-name">getElementsByNameAndProperty2</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Invalid JSON expression:
+Script1.groovy: 1: expecting EOF, found &apos;[&apos; @ line 1, column 37.
+                            $.elements[?(@.type == &apos;TEXT&apos; &amp;&amp; @.properties[0].producesVideo == false)].name
+                                       ^
+
+1 error
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:257)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:57)
+	at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at validationTests.validateJsonTests.getElementsByNameAndProperty2(validateJsonTests.java:161)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script1.groovy: 1: expecting EOF, found &apos;[&apos; @ line 1, column 37.
+   restAssuredJsonRootObject.$.elements[?(@.type == &apos;TEXT&apos; &amp;&amp; @.properties[0].producesVideo == false)].name
+                                       ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:311)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:151)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:121)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:133)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:325)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:224)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:190)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:226)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:196)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:954)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:636)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:612)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:589)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:401)
+	at groovy.lang.GroovyClassLoader.access$300(GroovyClassLoader.java:89)
+	at groovy.lang.GroovyClassLoader$5.provide(GroovyClassLoader.java:341)
+	at groovy.lang.GroovyClassLoader$5.provide(GroovyClassLoader.java:338)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:147)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:336)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:546)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:558)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:442)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:481)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:452)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:179)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:70)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+	... 36 more
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Reassured-class-failed -->
+          <div class="suite-Reassured-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">validationTests.validateJsonTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAllCategories">
+                  </a> <!-- checkAllCategories -->
+                  <span class="method-name">checkAllCategories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCategory">
+                  </a> <!-- checkCategory -->
+                  <span class="method-name">checkCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkToppingsIds">
+                  </a> <!-- checkToppingsIds -->
+                  <span class="method-name">checkToppingsIds</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="collectDoubleValues">
+                  </a> <!-- collectDoubleValues -->
+                  <span class="method-name">collectDoubleValues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBookNames">
+                  </a> <!-- getBookNames -->
+                  <span class="method-name">getBookNames</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getElementsByNameAndProperty">
+                  </a> <!-- getElementsByNameAndProperty -->
+                  <span class="method-name">getElementsByNameAndProperty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getIdsByBatterType">
+                  </a> <!-- getIdsByBatterType -->
+                  <span class="method-name">getIdsByBatterType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getIdsByBatterType1">
+                  </a> <!-- getIdsByBatterType1 -->
+                  <span class="method-name">getIdsByBatterType1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMaxPrice">
+                  </a> <!-- getMaxPrice -->
+                  <span class="method-name">getMaxPrice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPriceSum">
+                  </a> <!-- getPriceSum -->
+                  <span class="method-name">getPriceSum</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -156,7 +424,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Reassured&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;apiTests.test&quot;/&gt;
+      &lt;class name=&quot;validationTests.validateJsonTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Reassured --&gt;
@@ -180,6 +448,70 @@
             <span class="header-content">Groups for Reassured</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">group1</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkAllCategories</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkCategory</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllAuthorsLength</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getBookNames</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMaxPrice</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getPriceSum</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">group2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkToppingsIds</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTypesById</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">collectDoubleValues</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getIdsByBatterType</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getIdsByBatterType1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">group3</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getElementsByNameAndProperty</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getElementsByNameAndProperty2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Reassured" class="panel">
@@ -196,20 +528,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'two')
-data.setCell(0, 2, 'apiTests.test')
-data.setCell(0, 3, 1);
+data.setCell(0, 1, 'checkAllCategories')
+data.setCell(0, 2, 'validationTests.validateJsonTests')
+data.setCell(0, 3, 868);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'one')
-data.setCell(1, 2, 'apiTests.test')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'checkCategory')
+data.setCell(1, 2, 'validationTests.validateJsonTests')
+data.setCell(1, 3, 35);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkToppingsIds')
+data.setCell(2, 2, 'validationTests.validateJsonTests')
+data.setCell(2, 3, 31);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getAllAuthorsLength')
+data.setCell(3, 2, 'validationTests.validateJsonTests')
+data.setCell(3, 3, 29);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getIdsByBatterType')
+data.setCell(4, 2, 'validationTests.validateJsonTests')
+data.setCell(4, 3, 27);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getElementsByNameAndProperty2')
+data.setCell(5, 2, 'validationTests.validateJsonTests')
+data.setCell(5, 3, 25);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'collectDoubleValues')
+data.setCell(6, 2, 'validationTests.validateJsonTests')
+data.setCell(6, 3, 15);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkTypesById')
+data.setCell(7, 2, 'validationTests.validateJsonTests')
+data.setCell(7, 3, 15);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getBookNames')
+data.setCell(8, 2, 'validationTests.validateJsonTests')
+data.setCell(8, 3, 14);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getElementsByNameAndProperty')
+data.setCell(9, 2, 'validationTests.validateJsonTests')
+data.setCell(9, 3, 13);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getPriceSum')
+data.setCell(10, 2, 'validationTests.validateJsonTests')
+data.setCell(10, 3, 11);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getIdsByBatterType1')
+data.setCell(11, 2, 'validationTests.validateJsonTests')
+data.setCell(11, 3, 11);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getMaxPrice')
+data.setCell(12, 2, 'validationTests.validateJsonTests')
+data.setCell(12, 3, 2);
 window.suiteTableData['Reassured']= { tableData: data, tableDiv: 'times-div-Reassured'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Reassured">
               </div> <!-- times-div-Reassured -->
             </div> <!-- times-div -->
@@ -235,39 +611,221 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">apiTests.test</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">start</span>
+              <div class="chronological-class-name">validationTests.validateJsonTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">before</span>
-                <span class="method-start">22 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">two</span>
-                <span class="method-start">29 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">after</span>
-                <span class="method-start">32 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">before</span>
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
                 <span class="method-start">34 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">one</span>
-                <span class="method-start">34 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">after</span>
-                <span class="method-start">34 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">end</span>
+                <span class="method-name">checkAllCategories</span>
                 <span class="method-start">35 ms</span>
-              </div> <!-- configuration-test after -->
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkCategory</span>
+                <span class="method-start">916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">955 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkToppingsIds</span>
+                <span class="method-start">955 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">988 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">988 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">988 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkTypesById</span>
+                <span class="method-start">989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">1012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">1012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">1012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">collectDoubleValues</span>
+                <span class="method-start">1013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">1029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">1029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">1029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getAllAuthorsLength</span>
+                <span class="method-start">1030 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">1059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">1059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">1059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getBookNames</span>
+                <span class="method-start">1059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">1075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">1075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">1075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getElementsByNameAndProperty</span>
+                <span class="method-start">1076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">1092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">1093 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">1093 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getElementsByNameAndProperty2</span>
+                <span class="method-start">1093 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">1118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">1124 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">1124 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getIdsByBatterType</span>
+                <span class="method-start">1125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">1153 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">1154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">1158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getIdsByBatterType1</span>
+                <span class="method-start">1158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">1169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">1172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">1172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getMaxPrice</span>
+                <span class="method-start">1173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup1</span>
+                <span class="method-start">1182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup2</span>
+                <span class="method-start">1182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeGroup3</span>
+                <span class="method-start">1182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getPriceSum</span>
+                <span class="method-start">1183 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

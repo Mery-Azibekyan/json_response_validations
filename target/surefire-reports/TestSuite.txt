@@ -1,4 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.69 sec - in TestSuite
+Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2.127 sec <<< FAILURE! - in TestSuite
+checkTypesById(validationTests.validateJsonTests)  Time elapsed: 0.023 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: every item is "Regular"
+     but: an item was <[Regular]>
+	at validationTests.validateJsonTests.checkTypesById(validateJsonTests.java:116)
+
+getAllAuthorsLength(validationTests.validateJsonTests)  Time elapsed: 0.029 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: The parameter "author" was used but not defined. Define parameters using the JsonPath.params(...) function
+	at validationTests.validateJsonTests.getAllAuthorsLength(validateJsonTests.java:75)
+Caused by: groovy.lang.MissingPropertyException: No such property: author for class: java.lang.String
+	at validationTests.validateJsonTests.getAllAuthorsLength(validateJsonTests.java:75)
+
+getElementsByNameAndProperty2(validationTests.validateJsonTests)  Time elapsed: 0.023 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: 
+Invalid JSON expression:
+Script1.groovy: 1: expecting EOF, found '[' @ line 1, column 37.
+                            $.elements[?(@.type == 'TEXT' && @.properties[0].producesVideo == false)].name
+                                       ^
+
+1 error
+
+	at validationTests.validateJsonTests.getElementsByNameAndProperty2(validateJsonTests.java:161)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
+startup failed:
+Script1.groovy: 1: expecting EOF, found '[' @ line 1, column 37.
+   restAssuredJsonRootObject.$.elements[?(@.type == 'TEXT' && @.properties[0].producesVideo == false)].name
+                                       ^
+
+1 error
+
+	at validationTests.validateJsonTests.getElementsByNameAndProperty2(validateJsonTests.java:161)
+

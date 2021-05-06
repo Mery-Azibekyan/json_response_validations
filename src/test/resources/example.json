@@ -1,0 +1,138 @@
+{
+  "customerId": 0,
+  "authorizedCustomerIds": [
+    0
+  ],
+  "creativeVersionId": 0,
+  "description": "string",
+  "version": "string",
+  "duration": 0,
+  "frameRate": 0,
+  "previewImage": "string",
+  "previewVideo": "string",
+  "renderScript": "string",
+  "renderScriptType": "string",
+  "elements": [
+    {
+      "id": 0,
+      "type": "IMAGE",
+      "name": "string1",
+      "parentId": 0,
+      "presetId": 0,
+      "properties": [
+        {
+          "name": "string",
+          "value": {},
+          "type": "ALPHABETIC",
+          "producesVideo": true,
+          "renderScriptId": "string"
+        },
+        {
+          "name": "13443",
+          "value": {},
+          "type": "ALPHABETIC",
+          "producesVideo": true,
+          "renderScriptId": "string"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "type": "TEXT",
+      "name": "string5",
+      "parentId": 0,
+      "presetId": 0,
+      "properties": [
+        {
+          "name": "value",
+          "value": {},
+          "type": "ALPHABETIC",
+          "producesVideo": true,
+          "renderScriptId": "string"
+        },
+        {
+          "name": "string",
+          "value": {},
+          "type": "ALPHABETIC",
+          "producesVideo": true,
+          "renderScriptId": "string"
+        },
+        {
+          "name": "string43324",
+          "value": {},
+          "type": "ALPHABETIC",
+          "producesVideo": true,
+          "renderScriptId": "string"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "type": "TEXT",
+      "name": "string2",
+      "parentId": 0,
+      "presetId": 0,
+      "properties": [
+        {
+          "name": "value",
+          "value": {},
+          "type": "ALPHABETIC",
+          "producesVideo": false,
+          "renderScriptId": "string"
+        },
+        {
+          "name": "string",
+          "value": {},
+          "type": "ALPHABETIC",
+          "producesVideo": true,
+          "renderScriptId": "string"
+        },
+        {
+          "name": "string43324",
+          "value": {},
+          "type": "ALPHABETIC",
+          "producesVideo": true,
+          "renderScriptId": "string"
+        }
+      ]
+    }
+  ],
+  "globalElements": [
+    {
+      "id": 0,
+      "disabled": true
+    }
+  ],
+  "shots": [
+    {
+      "name": "string",
+      "displayOrder": 0,
+      "startFrame": 0,
+      "duration": 0,
+      "thumbnailFrame": 0,
+      "elements": [
+        {
+          "id": 0,
+          "disabled": true
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "string",
+      "displayOrder": 0,
+      "main": true,
+      "width": 0,
+      "height": 0,
+      "properties": [
+        {
+          "templateElementId": 0,
+          "propertyName": "string",
+          "linked": true,
+          "value": {}
+        }
+      ]
+    }
+  ]
+}

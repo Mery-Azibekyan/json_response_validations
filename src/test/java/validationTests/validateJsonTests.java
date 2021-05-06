@@ -1,4 +1,7 @@
 package validationTests;
+import com.sun.javaws.IconUtil;
+import io.restassured.path.json.JsonPath;
+import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,6 +19,7 @@ public class validateJsonTests {
 
     private String response;
     private String response1;
+    private String response2;
 
     @BeforeMethod(groups = {"group1"})
     private void beforeGroup1() {
@@ -38,6 +42,17 @@ public class validateJsonTests {
         }
     }
 
+    @BeforeMethod(groups = {"group3"})
+    private void beforeGroup3() {
+        final String file = "src/test/resources/example.json";
+        try {
+
+            response2 = new String(Files.readAllBytes(Paths.get(file)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Test(groups = {"group1"})
     public void getBookNames() {
         List<String> titles = new ArrayList<String>();
@@ -48,6 +63,8 @@ public class validateJsonTests {
 //        assertThat(bookTitles,hasItems("Sayings of the Century","Moby Dick"));
         assertThat(bookTitles, equalTo(titles));
     }
+
+
 
     @Test(groups = {"group1"})
     public void getAllAuthorsLength() {
@@ -134,4 +151,22 @@ public class validateJsonTests {
 
     }
 
+    @Test(groups = {"group3"})
+    public void getElementsByNameAndProperty(){
+        final String name = from(response2).getString("elements.find{it.type==\"TEXT\" && it.properties[0].producesVideo == false}.name");
+        System.out.println(name);
+    }
+
+    @Test(groups = {"group3"})
+    public void getElementsByNameAndProperty2(){
+//        final String name = from(response2).getString("$.elements[?(@.type == 'TEXT' && @.properties[0].producesVideo == false)].name");
+//        final String name1 = JsonPath(response2,"$.elements[?(@.type == 'TEXT' && @.properties[0].producesVideo == false)].name");
+
+        Object dataObject = com.jayway.jsonpath.JsonPath.parse(response2).read("$..elements[?((@.type == 'TEXT') && (@.properties[?(@.name == 'value' && @.producesVideo == "+Boolean.FALSE+")]))].name");
+        String dataString = dataObject.toString();
+        System.out.println(dataString);
+
+        final List<String> names = from(response2).getList("elements.findAll{it.type == 'TEXT' && it.properties.find{it.name=='value' && it.producesVideo == false}}.name");
+        System.out.println(names);
+    }
 }
